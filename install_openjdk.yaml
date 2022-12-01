@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+        # force_pat_get configures it so apt_get is used instead of apt
+        # update_cache is the same as running apt-get update
+        # Only update cache if it was built 3600s ago
+      - name: Update apt repo and cache on all Debian/Ubuntu boxes
+        apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
+      - name: Install OpenJDK Java
+        apt: name=openjdk-11-jdk update_cache=yes cache_valid_time=3600
