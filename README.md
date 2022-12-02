@@ -37,7 +37,7 @@ The purpose of this exercise is to learn how to deploy, manage, and provision re
     <img src="./images/ec2_instance_home.png" width=600, height=500>
 </p>
 
-3.  Configure EC2
+3.  Following instructions on screen to configure EC2 instance 
     1.  **Name:** simplilearn-host-machine
     2.  **Application and OS images (Amazon Machine Image):**
         -   Quick Start: Ubuntu Server 22.04 LTS (HVM), SSD volume type
@@ -389,4 +389,4 @@ sudo systemctl status jenkins
     <img src="./images/verify_installation.png" width=800, height=230>    
 </p>
 
-## Congrats! You have now successfully created an EC2 instance using Terraform, and configured necessary dependencies using Ansible. 
+## Congrats! You have now successfully created an EC2 instance using Terraform, and configured necessary dependencies using Ansible.
